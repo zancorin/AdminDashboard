@@ -1,0 +1,26 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 0.75fr 4fr;
+    grid-template-rows: 1.5fr 5fr;  
+    height:100vh;  
+}
+
+.sideBar {
+    background-color: rgb(39, 83, 109);
+    grid-area:  1 / 1 / 5 / 2; /* row start / column start / row end / column end*/
+}
+
+.topBar {
+    background-color: rgb(202, 95, 95);
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.mainContent {
+    background-color: rgb(51, 219, 59);
+    grid-area: 2 / 2 / 3 / 3;
+}
