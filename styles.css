@@ -15,7 +15,7 @@
 
 .sideBar {
     padding:20px 20px 20px 30px;
-    background-color: rgb(39, 83, 109);
+    background-color: rgb(4, 138, 201);
     grid-area:  1 / 1 / 5 / 2; /* row start / column start / row end / column end*/
 }
 
@@ -45,3 +45,39 @@
 .support{
     padding-top:20px;
 }
+
+/*TOPBAR GRID LAYOUT*/
+
+.topBar {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.topBar > .search {
+    background-color:red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 50px 0px 100px;
+}
+
+.topBar > .profile {
+    background-color: blue;;
+}
+
+.topBar > .welcome {
+    background-color: green;
+}
+
+.topBar > .buttons {
+    background-color: purple;
+}
+
+.searchBar {
+    background-color:yellow;
+    border-radius: 15px;
+    height:35px;
+    width:80%;
+}
+
