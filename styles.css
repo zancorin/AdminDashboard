@@ -15,17 +15,17 @@
 
 .sideBar {
     padding:20px 20px 20px 30px;
-    background-color: rgb(4, 138, 201);
+    background-color: rgb(255,126,0);
     grid-area:  1 / 1 / 5 / 2; /* row start / column start / row end / column end*/
 }
 
 .topBar {
-    background-color: rgb(202, 95, 95);
+    background-color: rgb(252, 252, 252);
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .mainContent {
-    background-color: rgb(51, 219, 59);
+    background-color: rgb(136, 138, 136);
     grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .topBar > .search {
-    background-color:red;
+    /*background-color:red;*/
     display:flex;
     
     flex-direction: column;
@@ -66,51 +66,99 @@
 
 .topBar > .profile {
     padding-top: 20px;
-    background-color: blue;
+    /*background-color: blue;*/
     display:grid;
     grid-template-columns: 1fr 1fr 3fr;
     gap:20px;
+    margin-left:75px;
 }
 
 .profile > * {
     width:60px;
     height:60px;
-    background: black;
+    background: rgb(255,126,0);
+    border-radius: 45%;
+
+}
+
+.profile > .name {
+    border-radius:25px;
+   /* text-align: center;*/
 }
 
 .name {
     width:250px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+
 .topBar > .welcome {
-    background-color: green;
+    /*background-color: green;*/
     display:grid;
     grid-template-columns: 1fr 3fr;
+    
+   /* margin: 5px 0px;*/
 }
 .welcome > .icon {
-    background-color: orange;
+    background-color: rgb(255,126,0);
     width:100px;
     margin-left:100px;
+    border-radius: 45%;
+
 }
 
 .welcome > .text {
-    background-color: orange;
+   /* background-color: orange;*/
     align-self: center;
     /*width: 350px;*/
 }
 
 .welcome > .username {
-    background-color: blue;
+  /*  background-color: blue;*/
 }
 
 .topBar > .buttons {
-    background-color: purple;
+    /*background-color: purple;*/
 }
 
 .searchBar {
-    background-color:yellow;
+    background-color:rgb(245, 232, 225);
     border-radius: 15px;
     height:35px;
     width:80%;
 }
 
+.buttons {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    gap:25px;
+}
+.buttons > button {
+   /* all:unset;*/
+   /*width:100px;*/
+   align-self: center;
+   font-size: 16px;
+   font-weight: bold;
+ 
+   color: #FFFFFF;
+   background-color: rgb(255,126,0);
+ 
+   border: none;
+   border-radius: 45px;
+ 
+   padding: 10px 40px;
+   cursor: pointer;
+}
+
+#new {
+    margin-left:25px;
+}
+
+#share {
+    margin-right:25px;
+}
