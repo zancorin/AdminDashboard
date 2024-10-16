@@ -176,6 +176,7 @@
     margin-right:25px;
 }
 
+/*MAIN CONTENT*/
 .mainContent {
     display:grid;
     grid-template-columns: 3fr 1fr;
@@ -185,6 +186,30 @@
 .mainContent > .projects {
    /* background-color: red;*/
     grid-area: 1 / 1 / 3 / 2;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.projects > .projectsContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   /* column-gap: 5px;
+    row-gap: 5px;*/
+}
+
+.projects > h2 {
+    margin-top:15px;
+    margin-left:10px;
+}
+.card {
+    margin:20px 0px 0px 20px;
+    /*width:425px;*/
+    height:200px;
+    background-color: rgb(240, 224, 255);
+    border-radius: 20px;
+    box-shadow: -5px 0px rgb(0, 89, 255);
 }
 
 .mainContent > .announcements {
