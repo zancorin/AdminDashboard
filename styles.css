@@ -108,22 +108,26 @@
 .topBar > .welcome {
     /*background-color: green;*/
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 0.65fr 3fr 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
     
    /* margin: 5px 0px;*/
 }
 .welcome > .icon {
     background-color: rgb(255,126,0);
-    width:100px;
-    margin-left:100px;
+    width:85px;
+    /*margin-left:100px;*/
     border-radius: 45%;
-
+    grid-area: 2 / 2 / 3 / 3;
+    /*align-self: center;*/
+    
 }
 
 .welcome > .text {
    /* background-color: orange;*/
     align-self: center;
     /*width: 350px;*/
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 .welcome > .username {
