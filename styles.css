@@ -175,3 +175,23 @@
 #share {
     margin-right:25px;
 }
+
+.mainContent {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.mainContent > .projects {
+   /* background-color: red;*/
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.mainContent > .announcements {
+   /* background-color: green;*/
+}
+
+.mainContent > .trending {
+    /*background-color: blue;*/
+    grid-area: 2 / 2 / 3 / 3;
+}
