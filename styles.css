@@ -209,7 +209,8 @@
     height:200px;
     background-color: rgb(240, 224, 255);
     border-radius: 5px;
-    box-shadow: -7px 0px rgb(0, 89, 255);
+    /*box-shadow: -7px 0px rgb(0, 89, 255);*/
+    border-left: solid 8px rgb(0, 89, 255);
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr;
@@ -259,11 +260,27 @@ p {
 
 
 }
-.mainContent > .announcements {
+
+.mainContent > .announcements,
+.mainContent > .trending {
    /* background-color: green;*/
+   display:grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1.25fr 8fr;
 }
 
-.mainContent > .trending {
-    /*background-color: blue;*/
-    grid-area: 2 / 2 / 3 / 3;
+.announcementsCardContainer,
+.trendingCardContainer {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: red;
+    margin: 12px 25px;
 }
+
+.announcements > h2,
+.trending > h2 {
+    margin-left:25px;
+    margin-top:15px;
+}
+
