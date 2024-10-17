@@ -201,17 +201,64 @@
 
 .projects > h2 {
     margin-top:15px;
-    margin-left:10px;
+    margin-left:25px;
 }
 .card {
     margin:20px 0px 0px 20px;
     /*width:425px;*/
     height:200px;
     background-color: rgb(240, 224, 255);
-    border-radius: 20px;
-    box-shadow: -5px 0px rgb(0, 89, 255);
+    border-radius: 5px;
+    box-shadow: -7px 0px rgb(0, 89, 255);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+
 }
 
+.card > h3 {
+    margin-top:20px;
+    margin-left:25px;
+    margin-bottom:5px;
+    font-size: 1.5em;
+}
+
+p {
+    font-size:1.4em;
+    margin-left:25px;
+}
+
+.cardContainer {
+    display:grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+.cardContainer > .text {
+    grid-area: 1 / 1 / 2 / span 3;
+}
+
+.favorite {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.watchlist {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.share {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.cardContainer > .text {
+
+
+}
+
+.cardContainer > .icons {
+
+
+}
 .mainContent > .announcements {
    /* background-color: green;*/
 }
