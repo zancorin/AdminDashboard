@@ -194,7 +194,7 @@
 .projects > .projectsContainer {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.05fr;
    /* column-gap: 5px;
     row-gap: 5px;*/
 }
@@ -224,7 +224,7 @@
     font-size: 1.5em;
 }
 
-p {
+.text > p {
     font-size:1.4em;
     margin-left:25px;
 }
@@ -273,14 +273,43 @@ p {
 .trendingCardContainer {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: red;
+    grid-template-rows: 1fr;
+    background-color: rgb(240, 224, 255);
     margin: 12px 25px;
 }
 
+.announcementsCard {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 .announcements > h2,
 .trending > h2 {
     margin-left:25px;
     margin-top:15px;
 }
+/*
+.first,
+.second {
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    margin-left:10px;
+    margin-right:10px;
+}
 
+.third {
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+*/
+
+.first, .second, .third {
+    padding-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.second, .third {
+    border-top:2px solid;
+}
