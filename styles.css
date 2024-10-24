@@ -86,8 +86,8 @@
     padding-top: 20px;
     /*background-color: blue;*/
     display:grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    gap:20px;
+    grid-template-columns: 0.5fr 0.5fr 3fr;
+    gap:30px;
     margin-left:75px;
 }
 
@@ -104,6 +104,12 @@
     background-color: rgb(255,126,0);
 }
 
+.profilePic > img {
+    width:60px;
+    height:60px;
+    border-radius: 45%;
+}
+
 .notifications {
     align-self: center;
 }
@@ -115,7 +121,7 @@
 .name {
     width:250px;
     /*display:flex;*/
-    text-align: center;
+   /* text-align: center;*/
    /* justify-content: center;
     align-items: center;*/
     color: black;
