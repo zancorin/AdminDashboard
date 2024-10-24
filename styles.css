@@ -143,7 +143,8 @@
 }
 .welcome > .icon {
     background-color: rgb(255,126,0);
-    width:85px;
+    width:75px;
+    height:75px;
     /*margin-left:100px;*/
     border-radius: 45%;
     grid-area: 2 / 2 / 3 / 3;
@@ -152,6 +153,11 @@
     
 }
 
+.icon > img {
+    width:75px;
+    height:75px;
+    border-radius: 45%;
+}
 
 .welcome > .text {
    /* background-color: orange;*/
