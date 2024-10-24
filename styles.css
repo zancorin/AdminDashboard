@@ -149,6 +149,7 @@
     border-radius: 45%;
     grid-area: 2 / 2 / 3 / 3;
     /*align-self: center;*/
+    margin-left: 25px;
 
     
 }
