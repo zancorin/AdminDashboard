@@ -379,23 +379,72 @@ grid-template-rows: 1fr 1fr 1fr;}
 /*ICONS*/
 
 .icons {
-    fill: #fff;
     width:50px;
     height:50px;
 }
 
-.title {
+.title
+ {
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.home,
+.myProfile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy
+ {
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 0.01fr 1fr 0.01fr;
 }
 
 .title > .icons {
     grid-area: 1 / 1 / 2 / 2;
     align-self: center;
 }
-.title > h1 {
+.title > h1
+ {
     grid-area: 1 / 2 / 2 / 3;
     align-self: center;
     text-align: center;
+}
+
+.home > .icons,
+.myProfile > .icons,
+.messages > .icons,
+.history > .icons,
+.tasks > .icons,
+.communities > .icons,
+.settings > .icons,
+.support > .icons,
+.privacy > .icons {
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+}
+
+.home > h2,
+.myProfile > h2,
+.messages > h2,
+.history > h2,
+.tasks > h2,
+.communities > h2,
+.settings > h2,
+.support > h2,
+.privacy > h2
+ {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
+    /*text-align: center;*/
+    margin-left:35px;
+}
+
+
+.settings {
+    margin-top: 40px;
 }
