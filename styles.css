@@ -282,7 +282,7 @@
 .cardContainer {
     display:grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 3fr 1.25fr;
 
 }
 
@@ -478,4 +478,10 @@ grid-template-rows: 1fr 1fr 1fr;}
 
 .settings {
     margin-top: 40px;
+}
+
+
+.smallIcons {
+    width:25px;
+    height:25px;
 }
