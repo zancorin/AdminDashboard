@@ -65,13 +65,20 @@
     justify-content: center;
     margin: 0px 50px 0px 100px;*/
     display:grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 0.25fr 4fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     
 }
 
-.searchBar{
+.search > .icons {
+    width:35px;
+    height:35px;
     grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
+}
+
+.searchBar{
+    grid-area: 2 / 3 / 3 / 4;
     align-self: center;
 }
 
