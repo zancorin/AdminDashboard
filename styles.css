@@ -94,11 +94,19 @@
 .profile > * {
     width:60px;
     height:60px;
-    background: rgb(255,126,0);
+  /*  background: rgb(255,126,0);*/
     border-radius: 45%;
+    align-self: center;
 
 }
 
+.profile > .profilePic {
+    background-color: rgb(255,126,0);
+}
+
+.notifications {
+    align-self: center;
+}
 .profile > .name {
     border-radius:25px;
    /* text-align: center;*/
@@ -110,7 +118,7 @@
     text-align: center;
    /* justify-content: center;
     align-items: center;*/
-    color: white;
+    color: black;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
