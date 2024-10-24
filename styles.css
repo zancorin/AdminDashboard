@@ -382,7 +382,7 @@
     /*background-color: red;*/
     display:grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;}
+grid-template-rows: 0.25fr 1fr 0.25fr;}
 
 .icon > p {
     grid-area: 2 / 3 / 3 / 4;
@@ -390,6 +390,16 @@ grid-template-rows: 1fr 1fr 1fr;}
     margin-right:5px;
 }
 
+.one > .icon > img,
+.two > .icon > img,
+.three > .icon > img,
+.four > .icon > img {
+    width:40px;
+    height:40px;
+    grid-area: 2 / 3 / 3 / 4;
+    place-self: center;
+    margin-right:25px;
+}
 
 .one > .handle,
 .two > .handle,
