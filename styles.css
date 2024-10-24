@@ -27,7 +27,7 @@
 }
 
 .mainContent {
-    background: linear-gradient(360deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(360deg, rgba(255,143,74,1) 0%, rgba(148,205,202,1) 100%);
     grid-area: 2 / 2 / 3 / 3;
 }
 
