@@ -189,7 +189,7 @@
 }
 .buttons > button {
    /* all:unset;*/
-   /*width:100px;*/
+   width:150px;
    align-self: center;
    font-size: 16px;
    font-weight: bold;
